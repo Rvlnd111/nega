@@ -1,9 +1,3 @@
-/**
- * 
- * @Http2 Whit Tls 1.3 by Skynet Stresser
- * 
- */
-
  const net = require("net");
  const http2 = require("http2");
  const tls = require("tls");
@@ -58,7 +52,7 @@
  
  const secureContext = tls.createSecureContext(secureContextOptions);
  
- var proxyFile = "proxy.txt";
+ var proxyFile = "proxies.txt";
  var proxies = readLines(proxyFile);
  var userAgents = readLines("ua.txt");
  
